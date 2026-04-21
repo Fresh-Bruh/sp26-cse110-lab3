@@ -1,3 +1,3 @@
-# Lab 2 - Starter
+# Lab 3 
 
-[https://fresh-bruh.github.io/Lab2_Starter/](https://fresh-bruh.github.io/Lab2_Starter/)
+[https://fresh-bruh.github.io/sp26-cse110-lab3//](https://fresh-bruh.github.io/sp26-cse110-lab3//)
