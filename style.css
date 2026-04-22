@@ -534,3 +534,147 @@ footer hr {
   position: sticky;
   bottom: 0;
 }
+
+
+
+/* ===== Meeting Sections ===== */
+
+/* Element + class combinator */
+section.meeting-section {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* ===== Section Headings ===== */
+section.meeting-section h3 {
+  color: var(--accent);
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: 0;
+  text-align: left;
+  text-decoration: none;
+  border-left: 3px solid var(--accent);
+  padding-left: 0.75rem;
+}
+
+/* ===== Lists ===== */
+section.meeting-section ul {
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  color: var(--header-text);
+  line-height: 1.8;
+}
+
+section.meeting-section ul li {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* Nested selectors */
+section.meeting-section {
+  & ul ul {
+    padding-left: 1.5rem;
+    color: rgba(224, 224, 224, 0.7);
+    list-style-type: circle;
+  }
+
+  & strong {
+    color: var(--accent);
+  }
+
+  & em {
+    color: hsl(168, 100%, 60%);
+  }
+}
+
+/* ===== :has() selector ===== */
+section.meeting-section:has(img) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 1rem;
+  align-items: start;
+}
+
+section.meeting-section:has(img) h3 {
+  grid-column: 1 / -1;
+}
+
+section.meeting-section:has(img) ul {
+  margin: 0;
+}
+
+/* ===== HR Styling ===== */
+main hr {
+  border: none;
+  border-top: 1px solid hsl(168, 100%, 15%);
+  margin: 0;
+}
+
+/* ===== Closing Section Grid ===== */
+#closing > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+#closing > ul > li {
+  background-color: color(srgb 0.08 0.08 0.18);
+  border-style: solid;
+  border-color: var(--accent);
+  border-width: 1px;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+#closing > ul > li > ul {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  color: rgba(224, 224, 224, 0.7);
+}
+
+/* ===== Fixed color name ===== */
+#closing > ul > li:has(ul li) {
+  border-color: teal;
+}
+
+/* ===== display none example ===== */
+/* Hides the closing section nested ul bullets */
+#closing > ul > li > ul {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+#closing li > ul > li::before {
+  content: "→ ";
+  color: var(--accent);
+}
+
+/* ===== Fixed position element ===== */
+/* Back to top button - fixed position */
+main::after {
+  content: "↑ Top";
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background-color: var(--accent);
+  color: #0f0f1a;
+  padding: 8px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  display: none;
+}
+
+main:has(section):hover::after {
+  display: block;
+}
