@@ -127,3 +127,154 @@ nav a:hover {
 nav a:active {
   color: color-mix(in srgb, var(--accent) 70%, white);
 }
+
+/* ===== Footer ===== */
+footer {
+  background-color: var(--header-bg);
+  border-top: 3px solid var(--accent);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  margin-top: 2rem;
+}
+
+/* ===== Fieldset ===== */
+fieldset {
+  background-color: color(srgb 0.08 0.08 0.18);
+  /* longhand border */
+  border-style: solid;
+  border-color: var(--accent);
+  border-width: 1px;
+  border-radius: 8px;
+  /* longhand padding */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 500px;
+}
+
+legend {
+  color: var(--accent);
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  /* shorthand padding */
+  padding: 0 10px;
+}
+
+/* ===== Labels ===== */
+label {
+  color: var(--header-text);
+  font-size: 0.95rem;
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+label b {
+  color: var(--accent);
+}
+
+/* ===== Inputs ===== */
+input[type="text"],
+input[type="date"],
+textarea,
+select,
+input[list] {
+  background-color: #16213e;
+  color: var(--header-text);
+  border-style: solid;
+  border-color: hsl(168, 100%, 30%);
+  border-width: 1px;
+  border-radius: 4px;
+  /* shorthand padding */
+  padding: 6px 10px;
+  font-family: "Merriweather Sans", serif;
+  font-size: 0.9rem;
+  width: 200px;
+}
+
+input[type="text"]:hover,
+input[type="date"]:hover,
+textarea:hover,
+select:hover,
+input[list]:hover {
+  border-color: var(--accent);
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 5px rgba(0, 212, 170, 0.4);
+}
+
+/* ===== Radio and Checkbox ===== */
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: var(--accent);
+  margin-right: 6px;
+}
+
+/* ===== Buttons ===== */
+button[type="submit"] {
+  background-color: var(--accent);
+  color: #0f0f1a;
+  border-style: solid;
+  border-color: var(--accent);
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-family: "Merriweather Sans", serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  margin-right: 10px;
+  margin-bottom: 0;
+  margin-left: 0;
+  display: inline-block;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: color-mix(in srgb, var(--accent) 80%, white);
+}
+
+button[type="submit"]:active {
+  background-color: hsl(168, 100%, 30%);
+}
+
+input[type="reset"] {
+  background-color: transparent;
+  color: var(--accent);
+  border-style: solid;
+  border-color: var(--accent);
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 8px 20px;
+  font-family: "Merriweather Sans", serif;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  display: inline-block;
+  transition: all 0.2s ease;
+}
+
+input[type="reset"]:hover {
+  background-color: rgba(0, 212, 170, 0.1);
+}
+
+input[type="reset"]:active {
+  background-color: rgba(0, 212, 170, 0.2);
+}
+
+/* ===== Form HR ===== */
+fieldset hr {
+  border: none;
+  border-top: 1px solid hsl(168, 100%, 20%);
+  margin: 1rem 0;
+}
