@@ -278,3 +278,44 @@ fieldset hr {
   border-top: 1px solid hsl(168, 100%, 20%);
   margin: 1rem 0;
 }
+
+/* ===== Universal Selector ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== Brainstorming Section ===== */
+#brainstorming {
+  position: relative;
+}
+
+#brainstorming img {
+  display: block;
+  position: relative;
+  border-style: solid;
+  border-color: var(--accent);
+  border-width: 2pt;
+  border-radius: 8px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  margin-left: 0;
+  margin-right: auto;
+  min-width: 100px;
+  width: 250px;
+  height: auto;
+  box-shadow: 0 0 15px rgba(0, 212, 170, 0.3);
+}
+
+#brainstorming img:hover {
+  box-shadow: 0 0 25px rgba(0, 212, 170, 0.6);
+  border-color: color-mix(in srgb, var(--accent) 80%, white);
+}
+
+
+/* ===== Main ===== */
+main {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
