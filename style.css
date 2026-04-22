@@ -422,3 +422,115 @@ main {
     padding-right: 1rem;
   }
 }
+
+/* ===== Media Section ===== */
+
+/* Descendant combinator */
+footer div {
+  margin-bottom: 1.5rem;
+}
+
+/* Child combinator */
+footer > div {
+  background-color: color(srgb 0.08 0.08 0.18);
+  border-style: solid;
+  border-color: var(--accent);
+  border-width: 1px;
+  border-radius: 8px;
+  padding: 1rem 1.5rem;
+}
+
+/* ===== Details and Summary ===== */
+details {
+  cursor: pointer;
+}
+
+/* Selector list */
+details, summary {
+  border-radius: 8px;
+}
+
+summary {
+  color: var(--accent);
+  font-size: 1.1rem;
+  padding: 0.5rem 0;
+  letter-spacing: 1px;
+  text-decoration: underline;
+  list-style: none;
+}
+
+summary:hover {
+  color: color-mix(in srgb, var(--accent) 80%, white);
+}
+
+/* Adjacent sibling combinator */
+summary + section {
+  margin-top: 1rem;
+}
+
+/* General sibling combinator */
+section ~ section {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid hsl(168, 100%, 20%);
+}
+
+/* ===== Flexbox Video and Audio ===== */
+details > section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+}
+
+details > section h3 {
+  color: var(--accent);
+  /* width in cm as absolute unit */
+  min-width: 3cm;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+/* ===== Figure ===== */
+figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+figcaption {
+  color: var(--header-text);
+  font-size: 0.9rem;
+}
+
+/* ===== Media Links ===== */
+/* Combining two selectors */
+a[href$=".mp4"],
+a[href$=".m4a"] {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-top: 0.25rem;
+}
+
+a[href$=".mp4"]:hover,
+a[href$=".m4a"]:hover {
+  text-decoration: underline;
+}
+
+/* ===== Footer HR ===== */
+/* Adjacent sibling combinator */
+div + hr {
+  border: none;
+  border-top: 1px solid hsl(168, 100%, 20%);
+  margin: 1.5rem 0;
+}
+
+/* ===== Sticky Footer HR ===== */
+footer hr {
+  position: sticky;
+  bottom: 0;
+}
