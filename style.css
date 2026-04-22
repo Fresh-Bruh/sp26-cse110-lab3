@@ -63,6 +63,8 @@ header > p {
   color: var(--accent);
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  /* inline display example */
+  display: inline;
 }
 
 header > ul {
@@ -92,6 +94,8 @@ nav {
   border-color: var(--accent);
   border-width: 1px;
   border-radius: 8px;
+  /* auto margin to center nav */
+  margin: 1rem auto;
 }
 
 nav > p {
@@ -114,6 +118,7 @@ nav ol li {
 nav a {
   color: var(--header-text);
   text-decoration: none;
+  /* inline-block display example */
   display: inline-block;
   font-size: 0.95rem;
   transition: color 0.2s ease;
@@ -291,7 +296,10 @@ fieldset hr {
 
 #brainstorming img {
   display: block;
-  position: relative;
+  /* position absolute example - positioned relative to #brainstorming parent */
+  position: absolute;
+  top: 0;
+  right: 0;
   border-style: solid;
   border-color: var(--accent);
   border-width: 2pt;
@@ -545,6 +553,8 @@ section.meeting-section {
   padding-bottom: 1.5rem;
   padding-left: 0;
   padding-right: 0;
+  /* static position (default) - included for requirement coverage */
+  position: static;
 }
 
 /* ===== Section Headings ===== */
