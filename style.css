@@ -319,3 +319,106 @@ main {
   padding-left: 3rem;
   padding-right: 3rem;
 }
+
+
+
+/* ===== Responsiveness ===== */
+
+/* ===== Tablet (max 768px) ===== */
+@media (max-width: 768px) {
+  header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  main {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  header h2 {
+    font-size: 1.2rem;
+  }
+
+  nav {
+    max-width: 100%;
+  }
+
+  fieldset {
+    max-width: 100%;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  textarea,
+  select,
+  input[list] {
+    width: 100%;
+  }
+}
+
+/* ===== Phone (max 480px) ===== */
+@media (max-width: 480px) {
+  header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  main {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+  }
+
+  header h2 {
+    font-size: 1rem;
+  }
+
+  header h3 {
+    font-size: 0.85rem;
+  }
+
+  nav {
+    max-width: 100%;
+    padding: 0.75rem 1rem;
+  }
+
+  #brainstorming img {
+    width: 100%;
+    height: auto;
+  }
+
+  button[type="submit"],
+  input[type="reset"] {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  fieldset {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
