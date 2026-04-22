@@ -1,3 +1,14 @@
 body {
-  background-color: lightblue;
+  background-color: rgb(171, 229, 216);
+  font-family: "Merriweather Sans", serif;
+}
+
+
+.merriweather-sans-font {
+  font-family: "Merriweather Sans", serif;
+  /* font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100; */
 }
